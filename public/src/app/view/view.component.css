@@ -1,0 +1,110 @@
+.container {
+    text-align: center;
+}
+.header {
+    border:2px solid gray; 
+    margin-top: 20px; 
+    padding: 30px; 
+    background-color: lightgrey;
+    text-align: left;
+    border-radius: 20px;
+}
+.main {
+    border:2px solid gray; 
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+.main1 {
+    border:2px solid gray; 
+    background-color: lightcyan;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.main2 {
+    border:2px solid gray; 
+    background-color: lightgreen;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+.main3 {
+    border:2px solid gray; 
+    background-color: lightpink;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+.list_box { 
+    display: inline-block; 
+    vertical-align: top; 
+    display: inline-block;
+}
+.img_display {
+    text-align: right;
+    vertical-align: top;
+}
+.container h2 {
+    text-align: left;   
+}
+.name {
+    text-align: left;
+}
+.button_box {
+    text-align: center;
+}
+
+.container2{
+    width: 80%;
+    background-color: beige;
+    border: 3px solid white;
+    padding-bottom: 50px;
+}
+.half_left_box{
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 30px;
+}
+.half_right_box{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 20px;
+}
+
+.left_window {
+    width: 15%;
+    height: 700px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+}
+.middle_window {
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    margin: 50px;
+}
+.right_window {
+    width: 15%;
+    height: 700px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+}

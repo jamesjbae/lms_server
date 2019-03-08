@@ -1,0 +1,122 @@
+<body style="text-align: center; background-color: lightgrey" >    
+  <div>
+    <div class="left_window">
+      <div>
+          <button class="btn btn-info">Register Here!</button>
+      </div>
+
+      <div class="main1" *ngFor="let student of viewLecture.students" >
+        <div>
+          <div class="name">
+            <h4 style="color:slateblue">Student Name: <span style="color:black">{{ student.name}}</span></h4>
+          </div>
+          <div class="name">
+            <h6 style="color:saddlebrown">Email: <span style="color:black">{{ student.email }}</span></h6>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img [src]="student.photoUrl" alt="lecture" style="width:100px; height:100px; border-radius: 50%;">
+          </div>
+        </div>
+        <div style="text-align: right;">
+            <button class="btn btn-info">Like</button>
+            <button class="btn btn-primary" style="margin-left: 5px;">Drop</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="middle_window">
+
+      <div style="padding-top: 0px;">
+          <h1 style="font-family: Montserrat script=all rev=1; font-size: 60px; font-weight: 900; 
+          color: slategrey; 
+          line-height: 150px;
+          text-align: center">Lecture Details</h1>
+      </div>
+
+      <div class="main" >
+        <div class="half_left_box">
+          <div class="name">
+            <h4 style="color:slateblue">Lecture Title:</h4>
+            <h4>{{ viewLecture.title }}</h4>
+          </div>
+          <div class="name">
+            <h6 style="color:saddlebrown">Major:</h6>
+            <h6>{{ viewLecture.major }}</h6>
+          </div>
+          <div class="name">
+            <h6 style="color:saddlebrown">Intro:</h6>
+            <h6>{{ viewLecture.intro }}</h6>
+          </div>
+          <div class="name">
+            <h6 style="color:saddlebrown">Details:</h6>
+            <h6>{{ viewLecture.details }}</h6>
+          </div>
+          <div class="button_box" style="text-align: left;">
+            <button class="btn btn-info" [routerLink]="['/edit/'+ viewLecture._id]" type="button">Edit</button>
+          </div>
+        </div>
+  
+        <div class="half_right_box">
+          <div class="img_display" >
+            <img [src]="viewLecture.photoUrl" alt="lecture" style="width:300px; height:200px;">
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 10px;" >
+          <div class="main" *ngFor="let instructor of viewLecture.instructors" >
+              <div>
+                <div class="name">
+                  <h4 style="color:slateblue">Instructor Name: <span style="color:black">{{ instructor.name}}</span> </h4>
+                  <h4></h4>
+                </div>
+                <div class="name">
+                  <h6 style="color:saddlebrown">Email:<span style="color:black"> {{ instructor.email }}</span> </h6>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img [src]="instructor.photoUrl" alt="lecture" style="width:100px; height:100px; border-radius: 50%;">
+                </div>
+              </div>
+              <div style="text-align: right">
+                  <button class="btn btn-info">Drop</button>
+              </div>
+            </div>
+    </div>
+
+    </div>
+
+    <div class="right_window">
+      <div>
+          <button class="btn btn-info">New Message</button>
+      </div>
+
+      <div class="main3" *ngFor="let comment of viewLecture.comments" >
+          <div>
+            <div class="name">
+              <h4 style="color:slateblue">Name: <span style="color:black">{{ comment.name}}</span></h4>
+            </div>
+            <div class="name">
+              <h6 style="color:saddlebrown">Comment: <span style="color:black">{{ comment.comment }}</span></h6>
+            </div>
+            <div class="name">
+                <h6 style="color:saddlebrown">Reference: <span style="color:black">{{ comment.reference }}</span></h6>
+              </div>
+            </div>
+            <div style="text-align: right;">
+                <button class="btn btn-info">Delete</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+  </div>
+  <div style="padding:100px;">
+  </div>
+</body>

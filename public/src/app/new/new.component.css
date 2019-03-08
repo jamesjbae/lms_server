@@ -1,0 +1,59 @@
+.container {
+    text-align: center;
+
+}
+.header {
+    border:2px solid gray; 
+    margin-top: 20px; 
+    padding: 30px; 
+    background-color: lightgrey;
+    text-align: left;
+    border-radius: 20px;
+}
+.main {
+    border:2px solid gray; 
+    margin-top: 20px; 
+    padding: 30px; 
+    text-align: left;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+.list_box { 
+    width: 300px; 
+    display: inline-block; 
+    vertical-align: top; 
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+}
+.img_display {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+.container h2 {
+    text-align: left;   
+}
+.name {
+    text-align: center;
+}
+.button_box {
+    text-align: center;
+}
+.left_window {
+    width: 20%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    background-color: slategrey;
+    margin: 40px;
+    padding: 40px;
+}
+.right_window {
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 30px;
+}

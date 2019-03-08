@@ -1,0 +1,120 @@
+<body style="margin-top: 0px;" >
+  
+  <div class="body" style="background-color: beige;" >
+    <div >
+        <h1 style="font-family: Montserrat script=all rev=1; font-size: 50px; font-weight: 900; 
+        color: slategray; 
+        line-height: 200px;
+        text-align: center">Register a New Lecture</h1>
+    </div>
+  </div>
+
+  <section style="background-color: beige; margin-top: -5px;">
+    
+    <div class="left_window">
+      <div class="container">
+        <h1>Add a new Lecture</h1>
+    
+        <div>
+        <form (submit)="onSubmitCreateLecture()" #newLectureForm="ngForm" >
+          <div class="form-group">
+            <h3>Lecture Name:</h3>
+            <input 
+            type="text"
+              class="form-control"
+              name="newLecture.title"
+              [(ngModel)]="newLecture.title"
+              >
+              <p *ngIf="newLectureError['title']" style = "color: red">{{ newLectureError.title.message }} </p>
+            </div>
+            
+            <div class="form-group">
+            <h3>Major:</h3>
+            <input 
+            type="text"
+            class="form-control"
+            name="newLecture.major"
+            [(ngModel)]="newLecture.major"
+            >
+            <p *ngIf="newLectureError['major']" style = "color: red">{{ newLectureError.major.message }} </p>
+          </div>
+          
+          <div class="form-group">
+            <h3>Intro:</h3>
+            <input 
+            type="text"
+              class="form-control"
+              name="newLecture.intro"
+              [(ngModel)]="newLecture.intro"
+            >
+            <p *ngIf="newLectureError['intro']" style = "color: red">{{ newLectureError.intro.message }} </p>
+          </div>
+
+          <div class="form-group">
+            <h3>Photo Url:</h3>
+            <input 
+              type="text"
+              class="form-control"
+              name="newLecture.photoUrl"
+              [(ngModel)]="newLecture.photoUrl"
+              >
+            <p *ngIf="newLectureError['photoUrl']" style = "color: red">{{ newLectureError.photoUrl.message }} </p>
+          </div>
+          
+          <div class="form-group">
+            <h3>Details:</h3>
+            <input 
+            type="text"
+              class="form-control"
+              name="newLecture.details"
+              [(ngModel)]="newLecture.details"
+            >
+            <p *ngIf="newLectureError['details']" style = "color: red">{{ newLectureError.details.message }} </p>
+          </div>
+          
+          <div class="mt-1">
+            <button class="btn btn-info">Add</button>
+            <button class="btn btn-info" [routerLink] = "['/home']" type="button" style="margin-left: 10px" >Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="right_window">
+    <div class="main">
+      <h1>New Lecture</h1>
+      
+      <div>
+        <form (submit)="onSubmitCreateLecture()" #newLectureForm="ngForm" >
+          <div class="form-group">
+            <h3>Title: <span style="color: red;"> {{ newLecture.title}}</span> </h3>
+          </div>
+          
+          <div class="form-group">
+            <h3>Major: <span style="color: red;">{{ newLecture.major}} </span></h3>
+          </div>
+          
+          <div class="form-group">
+            <h3>Intro: <span style="color: red;">{{ newLecture.intro}} </span></h3>
+          </div>
+  
+          <div class="form-group">
+            <h3>Details: <span style="color: red;"> {{ newLecture.details}} </span></h3>
+          </div>
+          
+          <div class="mt-1">
+            <button class="btn btn-info">Add</button>
+            <button class="btn btn-info" [routerLink] = "['/home']" type="button" style="margin-left: 10px" >Cancel</button>
+          </div>
+        </form>
+      </div>
+      <div class="img_display" style="margin-top: 30px" >
+        <img [src]="newLecture.photoUrl" alt="" style="width:400px; height:300px;">
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+</body>

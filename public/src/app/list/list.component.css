@@ -1,0 +1,53 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+.body {
+    background-image: url('https://3lsqjy1sj7i027fcn749gutj-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/crafting-creative-culture-jeff-veen-mtpcon-1024x683.jpg');
+    background-size: cover;
+}
+.header {
+    border:2px solid gray; 
+    margin-top: 20px; 
+    padding: 30px; 
+    background-color: lightgrey;
+    text-align: left;
+    border-radius: 20px;
+}
+.main {
+    margin-top: 20px; 
+    padding: 30px; 
+    text-align: left;
+}
+.list_box { 
+    width: 300px; 
+    height: 500px;
+    margin-right: 30px;
+    vertical-align: top; 
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    background-color: white;
+}
+.img_display {
+    width: 250px;
+    height: 220px;
+    text-align: center;
+}
+.container h2 {
+    text-align: left;   
+}
+.name {
+    text-align: center;
+}
+.button_box {
+    text-align: center;
+}
+.parallax { 
+    background-image: url('https://3lsqjy1sj7i027fcn749gutj-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/crafting-creative-culture-jeff-veen-mtpcon-1024x683.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center; 
+}

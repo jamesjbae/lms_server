@@ -1,0 +1,56 @@
+<body>
+  <div class="parallax">
+    <div >
+      <div style="padding-top: 50px;">
+          <h1 style="font-family: Montserrat script=all rev=1; font-size: 60px; font-weight: 900; 
+          color: white; 
+          line-height: 150px;
+          text-align: center">Lectures List</h1>
+      </div>
+      <div class="list_box" *ngFor="let lecture of allLectures">
+        <div class="img_display">
+          <img [src]="lecture.photoUrl" alt="" style="width:300px; height:200px;">
+        </div>
+        <div class="name">
+          <h6 style="color:slateblue">Lecture Title:</h6>
+          <h3>{{ lecture.title }}</h3>
+        </div>
+        <div class="name">
+          <h6 style="color:saddlebrown">Major:</h6>
+          <h6>{{ lecture.major }}</h6>
+        </div>
+        <div class="name">
+          <h6 style="color:saddlebrown">Intro:</h6>
+          <h6>{{ lecture.intro }}</h6>
+        </div>
+        <div class="name">
+          <h6 style="color:saddlebrown">Details:</h6>
+          <h6>{{ lecture.details }}</h6>
+        </div>
+        <div class="button_box">
+          <button class="btn btn-info" [routerLink]="['/view/'+ lecture._id]" type="button">Details</button>
+          <button class="btn btn-info" [routerLink]="['/edit/'+ lecture._id]" type="button" style="margin-left: 10px">Edit</button>
+          <button class="btn btn-info" (click)="onClickDeleteLecture(lecture._id)" type="button" style="margin-left: 10px">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div style="padding-bottom: 100px;"></div>
+  </div>
+  <div style="background-color: lightgrey">
+      <div style="padding-top: 50px;">
+          <h1 style="font-family: Montserrat script=all rev=1; font-size: 60px; font-weight: 900; 
+          color: slategrey; 
+          line-height: 400px;
+          text-align: center">Instructors</h1>
+      </div>
+
+      <div style="background-color: white; padding: 200px;"></div>
+
+
+
+
+
+
+
+  </div>
+</body>
